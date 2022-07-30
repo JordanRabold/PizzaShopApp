@@ -22,9 +22,15 @@ namespace PizzaShopApp
             bool doesExist = (from c in dbContext.Customers
                               where c.EmailAddress == email
                               select c).Any();
+
             if (!doesExist)
             {
                 LbEmailError.Visible = true;
+            }
+            else
+            {
+                LbEmailError.Visible = false;
+                MessageBox.Show("Email was found");
             }
         }
     }
