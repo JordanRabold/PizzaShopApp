@@ -6,5 +6,10 @@ namespace PizzaShopApp
         {
             InitializeComponent();
         }
+
+        private void BtnCreateAccount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
