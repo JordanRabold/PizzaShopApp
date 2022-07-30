@@ -18,13 +18,11 @@ namespace PizzaShopApp
 
         public string LastName { get; set; }
 
-        [Column("StreetAddress")]
-        public string StreeAddress { get; set; }
+        public string StreetAddress { get; set; }
 
         public string State { get; set; }
 
-        [Column("City")]
-        public string city { get; set; }    
+        public string City { get; set; }    
 
         public string ZipCode  { get; set; }
 

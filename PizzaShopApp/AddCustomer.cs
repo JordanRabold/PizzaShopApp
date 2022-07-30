@@ -16,5 +16,26 @@ namespace PizzaShopApp
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using PizzaShopContext dbContext = new();
+
+            Customer customer = new()
+            {
+                FirstName = TxtFirstName.Text,
+                LastName = TxtLastName.Text,
+                StreetAddress = TxtStreetAddress.Text,
+                State = TxtState.Text,
+                City = TxtCity.Text,
+                ZipCode = TxtZipCode.Text,
+                EmailAddress = TxtEmailAddress.Text
+            };
+
+            dbContext.Customers.Add(customer);
+            dbContext.SaveChanges();
+
+            MessageBox.Show($"Thanks {customer.FirstName}! for making an account");
+        }
     }
 }

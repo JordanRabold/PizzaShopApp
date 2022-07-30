@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TxtStreetAddress = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.TxtState = new System.Windows.Forms.TextBox();
             this.TxtCity = new System.Windows.Forms.TextBox();
             this.TxtZipCode = new System.Windows.Forms.TextBox();
-            this.TxtStreet = new System.Windows.Forms.TextBox();
+            this.TxtStreetAddress = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -64,14 +64,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Last Name:";
             // 
-            // TxtStreetAddress
+            // label
             // 
-            this.TxtStreetAddress.AutoSize = true;
-            this.TxtStreetAddress.Location = new System.Drawing.Point(54, 314);
-            this.TxtStreetAddress.Name = "TxtStreetAddress";
-            this.TxtStreetAddress.Size = new System.Drawing.Size(217, 41);
-            this.TxtStreetAddress.TabIndex = 2;
-            this.TxtStreetAddress.Text = "Street Address:";
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(54, 314);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(217, 41);
+            this.label.TabIndex = 2;
+            this.label.Text = "Street Address:";
             // 
             // label4
             // 
@@ -135,28 +135,28 @@
             this.TxtState.Location = new System.Drawing.Point(300, 398);
             this.TxtState.Name = "TxtState";
             this.TxtState.Size = new System.Drawing.Size(540, 47);
-            this.TxtState.TabIndex = 10;
+            this.TxtState.TabIndex = 11;
             // 
             // TxtCity
             // 
             this.TxtCity.Location = new System.Drawing.Point(300, 482);
             this.TxtCity.Name = "TxtCity";
             this.TxtCity.Size = new System.Drawing.Size(540, 47);
-            this.TxtCity.TabIndex = 11;
+            this.TxtCity.TabIndex = 12;
             // 
             // TxtZipCode
             // 
             this.TxtZipCode.Location = new System.Drawing.Point(300, 566);
             this.TxtZipCode.Name = "TxtZipCode";
             this.TxtZipCode.Size = new System.Drawing.Size(540, 47);
-            this.TxtZipCode.TabIndex = 12;
+            this.TxtZipCode.TabIndex = 13;
             // 
-            // TxtStreet
+            // TxtStreetAddress
             // 
-            this.TxtStreet.Location = new System.Drawing.Point(300, 314);
-            this.TxtStreet.Name = "TxtStreet";
-            this.TxtStreet.Size = new System.Drawing.Size(540, 47);
-            this.TxtStreet.TabIndex = 13;
+            this.TxtStreetAddress.Location = new System.Drawing.Point(300, 314);
+            this.TxtStreetAddress.Name = "TxtStreetAddress";
+            this.TxtStreetAddress.Size = new System.Drawing.Size(540, 47);
+            this.TxtStreetAddress.TabIndex = 10;
             // 
             // button1
             // 
@@ -166,6 +166,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -183,7 +184,7 @@
             this.ClientSize = new System.Drawing.Size(1459, 683);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.TxtStreet);
+            this.Controls.Add(this.TxtStreetAddress);
             this.Controls.Add(this.TxtZipCode);
             this.Controls.Add(this.TxtCity);
             this.Controls.Add(this.TxtState);
@@ -194,7 +195,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.TxtStreetAddress);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddCustomer";
@@ -208,7 +209,7 @@
 
         private Label label1;
         private Label label2;
-        private Label TxtStreetAddress;
+        private Label label;
         private Label label4;
         private Label label5;
         private Label label6;
@@ -219,7 +220,7 @@
         private TextBox TxtState;
         private TextBox TxtCity;
         private TextBox TxtZipCode;
-        private TextBox TxtStreet;
+        private TextBox TxtStreetAddress;
         private Button button1;
         private Button button2;
     }
