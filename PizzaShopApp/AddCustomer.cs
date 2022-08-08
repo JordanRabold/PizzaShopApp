@@ -25,7 +25,7 @@ namespace PizzaShopApp
             {
                 FirstName = TxtFirstName.Text,
                 LastName = TxtLastName.Text,
-                StreetAddress = TxtStreetAddress.Text,
+                StreeAddress = TxtStreetAddress.Text,
                 State = TxtState.Text,
                 City = TxtCity.Text,
                 ZipCode = TxtZipCode.Text,
@@ -36,6 +36,10 @@ namespace PizzaShopApp
             dbContext.SaveChanges();
 
             MessageBox.Show($"Thanks {customer.FirstName}! for making an account");
+
+            this.Hide();
+            HomePage homeForm = new();
+            homeForm.ShowDialog();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
