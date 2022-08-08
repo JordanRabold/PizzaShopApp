@@ -9,8 +9,9 @@ namespace PizzaShopApp
 
         private void BtnCreateAccount_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AddCustomer addCustomerForm = new();
-            DialogResult result = addCustomerForm.ShowDialog();
+            addCustomerForm.ShowDialog();
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
@@ -31,6 +32,10 @@ namespace PizzaShopApp
             {
                 LbEmailError.Visible = false;
                 MessageBox.Show("Email was found");
+
+                this.Hide();
+                HomePage homeForm = new();
+                homeForm.ShowDialog();
             }
         }
     }
