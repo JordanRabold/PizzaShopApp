@@ -41,10 +41,5 @@ namespace PizzaShopApp
             HomePage homeForm = new();
             homeForm.ShowDialog();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -14,6 +14,8 @@ namespace PizzaShopApp
             addCustomerForm.ShowDialog();
         }
 
+        public static string welcomeUser = "";
+
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             using PizzaShopContext dbContext = new();
@@ -30,6 +32,7 @@ namespace PizzaShopApp
             }
             else
             {
+                welcomeUser = TxtCustomerEmail.Text;
                 LbEmailError.Visible = false;
                 MessageBox.Show("Email was found");
 
