@@ -30,7 +30,6 @@ namespace PizzaShopApp
                 City = TxtCity.Text,
                 ZipCode = TxtZipCode.Text,
                 EmailAddress = TxtEmailAddress.Text,
-                Password = TxtPassword.Text
             };
 
             dbContext.Customers.Add(customer);
