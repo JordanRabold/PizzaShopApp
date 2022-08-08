@@ -29,13 +29,19 @@ namespace PizzaShopApp
                 State = TxtState.Text,
                 City = TxtCity.Text,
                 ZipCode = TxtZipCode.Text,
-                EmailAddress = TxtEmailAddress.Text
+                EmailAddress = TxtEmailAddress.Text,
+                Password = TxtPassword.Text
             };
 
             dbContext.Customers.Add(customer);
             dbContext.SaveChanges();
 
             MessageBox.Show($"Thanks {customer.FirstName}! for making an account");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
