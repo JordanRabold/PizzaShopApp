@@ -18,10 +18,12 @@ namespace PizzaShopApp
             InitializeComponent();
         }
 
+        public static Customer customerAccount { get; set; }
+
         private void AccountInfo_Load(object sender, EventArgs e)
         {
-            using PizzaShopContext dbContext = new();
-            dataGridView1.DataSource = dbContext.Customers.ToList();
+            //using PizzaShopContext dbContext = new();
+            //dataGridView1.DataSource = dbContext.Customers.ToList();
         }
     }
 }
