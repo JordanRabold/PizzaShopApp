@@ -25,7 +25,7 @@ namespace PizzaShopApp
             {
                 FirstName = TxtFirstName.Text,
                 LastName = TxtLastName.Text,
-                StreeAddress = TxtStreetAddress.Text,
+                StreetAddress = TxtStreetAddress.Text,
                 State = TxtState.Text,
                 City = TxtCity.Text,
                 ZipCode = TxtZipCode.Text,
