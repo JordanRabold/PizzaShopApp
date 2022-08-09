@@ -16,5 +16,17 @@ namespace PizzaShopApp
         {
             InitializeComponent();
         }
+
+        private void HomePage_Load(object sender, EventArgs e)
+        {
+            labelUserName.Text = "Welcome " + Form1.welcomeUser;
+        }
+
+        private void btnAccountInfo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AccountInfo infoForm = new();
+            infoForm.ShowDialog();
+        }
     }
 }
