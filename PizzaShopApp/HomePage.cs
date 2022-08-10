@@ -17,6 +17,8 @@ namespace PizzaShopApp
             InitializeComponent();
         }
 
+        public static Customer account { get; set; }
+
         private void HomePage_Load(object sender, EventArgs e)
         {
             labelUserName.Text = "Welcome " + Form1.welcomeUser;
@@ -26,7 +28,9 @@ namespace PizzaShopApp
         {
             this.Hide();
             AccountInfo infoForm = new();
+            AccountInfo.customerAccount = account;
             infoForm.ShowDialog();
+            this.Show();
         }
     }
 }
