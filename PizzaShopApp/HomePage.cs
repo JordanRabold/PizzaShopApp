@@ -30,7 +30,6 @@ namespace PizzaShopApp
             AccountInfo infoForm = new();
             AccountInfo.customerAccount = account;
             infoForm.ShowDialog();
-            this.Show();
         }
     }
 }
