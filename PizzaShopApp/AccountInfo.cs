@@ -57,5 +57,35 @@ namespace PizzaShopApp
             Form1 formOne = new Form1();
             formOne.ShowDialog();
         }
+
+        private void buttonUpdateAccount_Click(object sender, EventArgs e)
+        {
+            TxtFirstName.ReadOnly = false;
+            TxtLastName.ReadOnly = false;
+            TxtEmail.ReadOnly = false;
+            TxtStreetAddress.ReadOnly = false;
+            TxtState.ReadOnly = false;
+            TxtCity.ReadOnly = false;
+            TxtZipCode.ReadOnly = false;
+
+            buttonConfirm.Visible = true;
+        }
+
+        private void buttonConfirm_Click(object sender, EventArgs e)
+        {
+            using PizzaShopContext dbContext = new();
+
+            Customer cust = dbContext.Customers.First(i => i.CustomerID == Convert.ToInt32(label8.Text));
+            cust.FirstName = TxtFirstName.Text;
+            cust.LastName = TxtLastName.Text;
+            cust.EmailAddress = TxtEmail.Text;
+            cust.StreetAddress = TxtStreetAddress.Text;
+            cust.State = TxtState.Text;
+            cust.City = TxtCity.Text;
+            cust.ZipCode = TxtZipCode.Text;
+
+            dbContext.SaveChanges();
+            MessageBox.Show("Account Successfully Updated");
+        }
     }
 }

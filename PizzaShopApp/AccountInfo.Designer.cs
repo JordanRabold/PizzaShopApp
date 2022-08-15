@@ -48,6 +48,8 @@
             this.buttonDeleteAccount = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.buttonUpdateAccount = new System.Windows.Forms.Button();
+            this.buttonConfirm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -88,6 +90,7 @@
             // 
             this.TxtFirstName.Location = new System.Drawing.Point(120, 39);
             this.TxtFirstName.Name = "TxtFirstName";
+            this.TxtFirstName.ReadOnly = true;
             this.TxtFirstName.Size = new System.Drawing.Size(285, 27);
             this.TxtFirstName.TabIndex = 5;
             // 
@@ -95,6 +98,7 @@
             // 
             this.TxtLastName.Location = new System.Drawing.Point(120, 85);
             this.TxtLastName.Name = "TxtLastName";
+            this.TxtLastName.ReadOnly = true;
             this.TxtLastName.Size = new System.Drawing.Size(285, 27);
             this.TxtLastName.TabIndex = 6;
             // 
@@ -153,6 +157,7 @@
             this.TxtEmail.Location = new System.Drawing.Point(120, 129);
             this.TxtEmail.Margin = new System.Windows.Forms.Padding(1);
             this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.ReadOnly = true;
             this.TxtEmail.Size = new System.Drawing.Size(285, 27);
             this.TxtEmail.TabIndex = 12;
             // 
@@ -161,6 +166,7 @@
             this.TxtStreetAddress.Location = new System.Drawing.Point(120, 174);
             this.TxtStreetAddress.Margin = new System.Windows.Forms.Padding(1);
             this.TxtStreetAddress.Name = "TxtStreetAddress";
+            this.TxtStreetAddress.ReadOnly = true;
             this.TxtStreetAddress.Size = new System.Drawing.Size(285, 27);
             this.TxtStreetAddress.TabIndex = 13;
             // 
@@ -169,6 +175,7 @@
             this.TxtCity.Location = new System.Drawing.Point(56, 213);
             this.TxtCity.Margin = new System.Windows.Forms.Padding(1);
             this.TxtCity.Name = "TxtCity";
+            this.TxtCity.ReadOnly = true;
             this.TxtCity.Size = new System.Drawing.Size(151, 27);
             this.TxtCity.TabIndex = 14;
             // 
@@ -177,6 +184,7 @@
             this.TxtZipCode.Location = new System.Drawing.Point(535, 213);
             this.TxtZipCode.Margin = new System.Windows.Forms.Padding(1);
             this.TxtZipCode.Name = "TxtZipCode";
+            this.TxtZipCode.ReadOnly = true;
             this.TxtZipCode.Size = new System.Drawing.Size(151, 27);
             this.TxtZipCode.TabIndex = 15;
             // 
@@ -185,6 +193,7 @@
             this.TxtState.Location = new System.Drawing.Point(276, 213);
             this.TxtState.Margin = new System.Windows.Forms.Padding(1);
             this.TxtState.Name = "TxtState";
+            this.TxtState.ReadOnly = true;
             this.TxtState.Size = new System.Drawing.Size(151, 27);
             this.TxtState.TabIndex = 16;
             // 
@@ -216,11 +225,34 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "Customer ID:";
             // 
+            // buttonUpdateAccount
+            // 
+            this.buttonUpdateAccount.Location = new System.Drawing.Point(535, 69);
+            this.buttonUpdateAccount.Name = "buttonUpdateAccount";
+            this.buttonUpdateAccount.Size = new System.Drawing.Size(151, 29);
+            this.buttonUpdateAccount.TabIndex = 20;
+            this.buttonUpdateAccount.Text = "Update Account";
+            this.buttonUpdateAccount.UseVisualStyleBackColor = true;
+            this.buttonUpdateAccount.Click += new System.EventHandler(this.buttonUpdateAccount_Click);
+            // 
+            // buttonConfirm
+            // 
+            this.buttonConfirm.Location = new System.Drawing.Point(535, 123);
+            this.buttonConfirm.Name = "buttonConfirm";
+            this.buttonConfirm.Size = new System.Drawing.Size(151, 29);
+            this.buttonConfirm.TabIndex = 21;
+            this.buttonConfirm.Text = "Confirm Update";
+            this.buttonConfirm.UseVisualStyleBackColor = true;
+            this.buttonConfirm.Visible = false;
+            this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
+            // 
             // AccountInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 272);
+            this.Controls.Add(this.buttonConfirm);
+            this.Controls.Add(this.buttonUpdateAccount);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.buttonDeleteAccount);
@@ -269,5 +301,7 @@
         private Button buttonDeleteAccount;
         private Label label8;
         private Label label9;
+        private Button buttonUpdateAccount;
+        private Button buttonConfirm;
     }
 }
