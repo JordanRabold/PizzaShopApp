@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.EntityFrameworkCore;
 
 namespace PizzaShopApp
 {
@@ -35,6 +36,25 @@ namespace PizzaShopApp
             //dataGridView1.DataSource = dbContext.Customers.ToList();
         }
 
+        /// <summary>
+        /// Deletes the customers account based on which customer is logged in at the moment.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonDeleteAccount_Click(object sender, EventArgs e)
+        {
+            // Get the PizzaShopContext
+            using PizzaShopContext dbContext = new();
 
+            // Get customer where TxtEmail = email in database
+            Customer cust = dbContext.Customers.First(i => i.EmailAddress == TxtEmail.Text);
+            dbContext.Customers.Remove(cust);
+            dbContext.SaveChanges();
+            MessageBox.Show("Account Successfully Deleted");
+
+            this.Hide();
+            Form1 formOne = new Form1();
+            formOne.ShowDialog();
+        }
     }
 }
