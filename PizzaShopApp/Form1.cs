@@ -43,6 +43,7 @@ namespace PizzaShopApp
                                       select c).FirstOrDefault();
 
                 // Create a customer object to be passed onto the next form
+                customerInfo.CustomerID = customer.CustomerID;
                 customerInfo.FirstName = customer.FirstName;
                 customerInfo.LastName = customer.LastName;
                 customerInfo.StreetAddress = customer.StreetAddress;
