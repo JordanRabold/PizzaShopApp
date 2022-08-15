@@ -46,6 +46,7 @@
             this.TxtZipCode = new System.Windows.Forms.TextBox();
             this.TxtState = new System.Windows.Forms.TextBox();
             this.buttonDeleteAccount = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -149,7 +150,7 @@
             // TxtEmail
             // 
             this.TxtEmail.Location = new System.Drawing.Point(120, 96);
-            this.TxtEmail.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtEmail.Margin = new System.Windows.Forms.Padding(1);
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(285, 27);
             this.TxtEmail.TabIndex = 12;
@@ -157,7 +158,7 @@
             // TxtStreetAddress
             // 
             this.TxtStreetAddress.Location = new System.Drawing.Point(120, 174);
-            this.TxtStreetAddress.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtStreetAddress.Margin = new System.Windows.Forms.Padding(1);
             this.TxtStreetAddress.Name = "TxtStreetAddress";
             this.TxtStreetAddress.Size = new System.Drawing.Size(285, 27);
             this.TxtStreetAddress.TabIndex = 13;
@@ -165,7 +166,7 @@
             // TxtCity
             // 
             this.TxtCity.Location = new System.Drawing.Point(56, 213);
-            this.TxtCity.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtCity.Margin = new System.Windows.Forms.Padding(1);
             this.TxtCity.Name = "TxtCity";
             this.TxtCity.Size = new System.Drawing.Size(151, 27);
             this.TxtCity.TabIndex = 14;
@@ -173,7 +174,7 @@
             // TxtZipCode
             // 
             this.TxtZipCode.Location = new System.Drawing.Point(535, 213);
-            this.TxtZipCode.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtZipCode.Margin = new System.Windows.Forms.Padding(1);
             this.TxtZipCode.Name = "TxtZipCode";
             this.TxtZipCode.Size = new System.Drawing.Size(151, 27);
             this.TxtZipCode.TabIndex = 15;
@@ -181,7 +182,7 @@
             // TxtState
             // 
             this.TxtState.Location = new System.Drawing.Point(276, 213);
-            this.TxtState.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtState.Margin = new System.Windows.Forms.Padding(1);
             this.TxtState.Name = "TxtState";
             this.TxtState.Size = new System.Drawing.Size(151, 27);
             this.TxtState.TabIndex = 16;
@@ -196,11 +197,21 @@
             this.buttonDeleteAccount.UseVisualStyleBackColor = true;
             this.buttonDeleteAccount.Click += new System.EventHandler(this.buttonDeleteAccount_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(15, 142);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 20);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "label8";
+            // 
             // AccountInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 272);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.buttonDeleteAccount);
             this.Controls.Add(this.TxtState);
             this.Controls.Add(this.TxtZipCode);
@@ -245,5 +256,6 @@
         private TextBox TxtZipCode;
         private TextBox TxtState;
         private Button buttonDeleteAccount;
+        private Label label8;
     }
 }

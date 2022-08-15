@@ -24,6 +24,7 @@ namespace PizzaShopApp
         private void AccountInfo_Load(object sender, EventArgs e)
         {
             // Display all the account info within their respctive Textboxes
+            label8.Text = Convert.ToString(customerAccount.CustomerID);
             TxtFirstName.Text = customerAccount.FirstName;
             TxtLastName.Text = customerAccount.LastName;
             TxtEmail.Text = customerAccount.EmailAddress;
@@ -47,7 +48,7 @@ namespace PizzaShopApp
             using PizzaShopContext dbContext = new();
 
             // Get customer where TxtEmail = email in database
-            Customer cust = dbContext.Customers.First(i => i.EmailAddress == TxtEmail.Text);
+            Customer cust = dbContext.Customers.First(i => i.CustomerID == Convert.ToInt32(label8.Text));
             dbContext.Customers.Remove(cust);
             dbContext.SaveChanges();
             MessageBox.Show("Account Successfully Deleted");
