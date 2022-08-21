@@ -42,5 +42,20 @@ namespace PizzaShopApp
             login.ShowDialog();
             this.Close();
         }
+
+        private void BtnClearInputs_Click(object sender, EventArgs e)
+        {
+            List<TextBox> textBoxList = new List<TextBox>();
+
+            foreach (TextBox tb in this.Controls.OfType<TextBox>())
+            {
+                textBoxList.Add(tb);
+            }
+
+            foreach (TextBox tb in textBoxList)
+            {
+                tb.Text = String.Empty;
+            }
+        }
     }
 }

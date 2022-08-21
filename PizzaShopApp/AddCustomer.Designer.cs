@@ -43,7 +43,7 @@
             this.TxtZipCode = new System.Windows.Forms.TextBox();
             this.TxtStreetAddress = new System.Windows.Forms.TextBox();
             this.BtnCreateAccount = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnClearInputs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -183,22 +183,23 @@
             this.BtnCreateAccount.UseVisualStyleBackColor = true;
             this.BtnCreateAccount.Click += new System.EventHandler(this.BtnCreateAccount_Click);
             // 
-            // button2
+            // BtnClearInputs
             // 
-            this.button2.Location = new System.Drawing.Point(978, 351);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(338, 57);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Clear Information";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnClearInputs.Location = new System.Drawing.Point(978, 351);
+            this.BtnClearInputs.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearInputs.Name = "BtnClearInputs";
+            this.BtnClearInputs.Size = new System.Drawing.Size(338, 57);
+            this.BtnClearInputs.TabIndex = 15;
+            this.BtnClearInputs.Text = "Clear Information";
+            this.BtnClearInputs.UseVisualStyleBackColor = true;
+            this.BtnClearInputs.Click += new System.EventHandler(this.BtnClearInputs_Click);
             // 
             // AddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1460, 722);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnClearInputs);
             this.Controls.Add(this.BtnCreateAccount);
             this.Controls.Add(this.TxtStreetAddress);
             this.Controls.Add(this.TxtZipCode);
@@ -239,7 +240,7 @@
         private TextBox TxtZipCode;
         private TextBox TxtStreetAddress;
         private Button button1;
-        private Button button2;
+        private Button BtnClearInputs;
         private Button BtnCreateAccount;
     }
 }
