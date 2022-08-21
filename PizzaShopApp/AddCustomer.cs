@@ -38,8 +38,9 @@ namespace PizzaShopApp
             MessageBox.Show($"Thanks {customer.FirstName}! for making an account");
 
             this.Hide();
-            HomePage homeForm = new();
-            homeForm.ShowDialog();
+            Form1 login = new Form1();
+            login.ShowDialog();
+            this.Close();
         }
     }
 }
