@@ -24,7 +24,7 @@ namespace PizzaShopApp
             // Checks each textbox for an entered value
             foreach (TextBox tb in this.Controls.OfType<TextBox>())
             {
-                if (tb.Text == "")
+                if (tb.Text.Trim() == "")
                 {
                     isEmpty = true;
                 }
@@ -36,13 +36,13 @@ namespace PizzaShopApp
 
                 Customer customer = new()
                 {
-                    FirstName = TxtFirstName.Text,
-                    LastName = TxtLastName.Text,
-                    StreetAddress = TxtStreetAddress.Text,
-                    State = TxtState.Text,
-                    City = TxtCity.Text,
-                    ZipCode = TxtZipCode.Text,
-                    EmailAddress = TxtEmailAddress.Text,
+                    FirstName = TxtFirstName.Text.Trim(),
+                    LastName = TxtLastName.Text.Trim(),
+                    StreetAddress = TxtStreetAddress.Text.Trim(),
+                    State = TxtState.Text.Trim(),
+                    City = TxtCity.Text.Trim(),
+                    ZipCode = TxtZipCode.Text.Trim(),
+                    EmailAddress = TxtEmailAddress.Text.Trim(),
                 };
 
                 dbContext.Customers.Add(customer);
