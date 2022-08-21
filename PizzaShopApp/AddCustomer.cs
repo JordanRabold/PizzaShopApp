@@ -17,7 +17,7 @@ namespace PizzaShopApp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnCreateAccount_Click(object sender, EventArgs e)
         {
             using PizzaShopContext dbContext = new();
 
