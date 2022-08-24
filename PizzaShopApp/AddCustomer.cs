@@ -17,29 +17,58 @@ namespace PizzaShopApp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnCreateAccount_Click(object sender, EventArgs e)
         {
-            using PizzaShopContext dbContext = new();
+            bool isEmpty = false;
 
-            Customer customer = new()
+            // Checks each textbox for an entered value
+            foreach (TextBox tb in this.Controls.OfType<TextBox>())
             {
-                FirstName = TxtFirstName.Text,
-                LastName = TxtLastName.Text,
-                StreetAddress = TxtStreetAddress.Text,
-                State = TxtState.Text,
-                City = TxtCity.Text,
-                ZipCode = TxtZipCode.Text,
-                EmailAddress = TxtEmailAddress.Text,
-            };
+                if (tb.Text.Trim() == "")
+                {
+                    isEmpty = true;
+                }
+            }
 
-            dbContext.Customers.Add(customer);
-            dbContext.SaveChanges();
+            if (!isEmpty)
+            {
+                using PizzaShopContext dbContext = new();
 
-            MessageBox.Show($"Thanks {customer.FirstName}! for making an account");
+                Customer customer = new()
+                {
+                    FirstName = TxtFirstName.Text.Trim(),
+                    LastName = TxtLastName.Text.Trim(),
+                    StreetAddress = TxtStreetAddress.Text.Trim(),
+                    State = TxtState.Text.Trim(),
+                    City = TxtCity.Text.Trim(),
+                    ZipCode = TxtZipCode.Text.Trim(),
+                    EmailAddress = TxtEmailAddress.Text.Trim(),
+                };
 
-            this.Hide();
-            HomePage homeForm = new();
-            homeForm.ShowDialog();
+                dbContext.Customers.Add(customer);
+                dbContext.SaveChanges();
+
+                MessageBox.Show($"Thanks {customer.FirstName}! for making an account");
+
+                this.Hide();
+                Form1 login = new Form1();
+                login.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show($"Please enter missing values");
+            }
+
+        }
+
+        private void BtnClearInputs_Click(object sender, EventArgs e)
+        {
+            // Itterates through each textbox and clears values
+            foreach (TextBox tb in this.Controls.OfType<TextBox>())
+            {
+                tb.Text = String.Empty;
+            }
         }
     }
 }
