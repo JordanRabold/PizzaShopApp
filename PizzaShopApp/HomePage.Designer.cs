@@ -30,11 +30,12 @@
         {
             this.btnAccountInfo = new System.Windows.Forms.Button();
             this.labelUserName = new System.Windows.Forms.Label();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAccountInfo
             // 
-            this.btnAccountInfo.Location = new System.Drawing.Point(694, 12);
+            this.btnAccountInfo.Location = new System.Drawing.Point(158, 180);
             this.btnAccountInfo.Name = "btnAccountInfo";
             this.btnAccountInfo.Size = new System.Drawing.Size(94, 29);
             this.btnAccountInfo.TabIndex = 0;
@@ -45,16 +46,27 @@
             // labelUserName
             // 
             this.labelUserName.AutoSize = true;
-            this.labelUserName.Location = new System.Drawing.Point(29, 21);
+            this.labelUserName.Location = new System.Drawing.Point(129, 24);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(0, 20);
+            this.labelUserName.Size = new System.Drawing.Size(72, 20);
             this.labelUserName.TabIndex = 1;
+            this.labelUserName.Text = "InputUser";
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Location = new System.Drawing.Point(158, 105);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(94, 29);
+            this.btnMenu.TabIndex = 2;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.UseVisualStyleBackColor = true;
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(448, 304);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.labelUserName);
             this.Controls.Add(this.btnAccountInfo);
             this.Name = "HomePage";
@@ -69,5 +81,6 @@
 
         private Button btnAccountInfo;
         private Label labelUserName;
+        private Button btnMenu;
     }
 }

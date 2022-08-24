@@ -45,7 +45,7 @@
             this.TxtZipCode = new System.Windows.Forms.TextBox();
             this.TxtState = new System.Windows.Forms.TextBox();
             this.buttonDeleteAccount = new System.Windows.Forms.Button();
-            this.LBLCustID = new System.Windows.Forms.Label();
+            this.LblCustID = new System.Windows.Forms.Label();
             this.LblCustomerID = new System.Windows.Forms.Label();
             this.buttonUpdateAccount = new System.Windows.Forms.Button();
             this.buttonConfirm = new System.Windows.Forms.Button();
@@ -198,14 +198,14 @@
             this.buttonDeleteAccount.UseVisualStyleBackColor = true;
             this.buttonDeleteAccount.Click += new System.EventHandler(this.buttonDeleteAccount_Click);
             // 
-            // LBLCustID
+            // label8
             // 
-            this.LBLCustID.AutoSize = true;
-            this.LBLCustID.Location = new System.Drawing.Point(137, 9);
-            this.LBLCustID.Name = "LBLCustID";
-            this.LBLCustID.Size = new System.Drawing.Size(165, 20);
-            this.LBLCustID.TabIndex = 18;
-            this.LBLCustID.Text = "CustomerIDPlaceholder";
+            this.LblCustID.AutoSize = true;
+            this.LblCustID.Location = new System.Drawing.Point(137, 9);
+            this.LblCustID.Name = "label8";
+            this.LblCustID.Size = new System.Drawing.Size(165, 20);
+            this.LblCustID.TabIndex = 18;
+            this.LblCustID.Text = "CustomerIDPlaceholder";
             // 
             // LblCustomerID
             // 
@@ -276,7 +276,7 @@
             this.Controls.Add(this.buttonConfirm);
             this.Controls.Add(this.buttonUpdateAccount);
             this.Controls.Add(this.LblCustomerID);
-            this.Controls.Add(this.LBLCustID);
+            this.Controls.Add(this.LblCustID);
             this.Controls.Add(this.buttonDeleteAccount);
             this.Controls.Add(this.TxtState);
             this.Controls.Add(this.TxtZipCode);
@@ -325,5 +325,6 @@
         private Label LblPassword;
         private TextBox TxtPassword;
         private Button buttonBack;
+        private Label LblCustID;
     }
 }

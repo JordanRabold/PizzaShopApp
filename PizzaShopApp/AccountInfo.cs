@@ -24,7 +24,7 @@ namespace PizzaShopApp
         private void AccountInfo_Load(object sender, EventArgs e)
         {
             // Display all the account info within their respctive Textboxes
-            LBLCustID.Text = Convert.ToString(customerAccount.CustomerID);
+            LblCustID.Text = Convert.ToString(customerAccount.CustomerID);
             TxtFirstName.Text = customerAccount.FirstName;
             TxtLastName.Text = customerAccount.LastName;
             TxtEmail.Text = customerAccount.EmailAddress;
@@ -46,7 +46,7 @@ namespace PizzaShopApp
             using PizzaShopContext dbContext = new();
 
             // Get customer where TxtEmail = email in database
-            Customer cust = dbContext.Customers.First(i => i.CustomerID == Convert.ToInt32(LBLCustID.Text));
+            Customer cust = dbContext.Customers.First(i => i.CustomerID == Convert.ToInt32(LblCustID.Text));
             dbContext.Customers.Remove(cust);
             dbContext.SaveChanges();
             MessageBox.Show("Account Successfully Deleted");
@@ -74,7 +74,7 @@ namespace PizzaShopApp
         {
             using PizzaShopContext dbContext = new();
 
-            Customer cust = dbContext.Customers.First(i => i.CustomerID == Convert.ToInt32(LBLCustID.Text));
+            Customer cust = dbContext.Customers.First(i => i.CustomerID == Convert.ToInt32(LblCustID.Text));
             cust.FirstName = TxtFirstName.Text;
             cust.LastName = TxtLastName.Text;
             cust.EmailAddress = TxtEmail.Text;
@@ -83,6 +83,17 @@ namespace PizzaShopApp
             cust.City = TxtCity.Text;
             cust.ZipCode = TxtZipCode.Text;
             cust.Password = TxtPassword.Text;
+
+            TxtFirstName.ReadOnly = true;
+            TxtLastName.ReadOnly = true;
+            TxtEmail.ReadOnly = true;
+            TxtStreetAddress.ReadOnly = true;
+            TxtState.ReadOnly = true;
+            TxtCity.ReadOnly = true;
+            TxtZipCode.ReadOnly = true;
+            TxtPassword.ReadOnly = true;
+
+            buttonConfirm.Visible = false;
 
             dbContext.SaveChanges();
             MessageBox.Show("Account Successfully Updated");
