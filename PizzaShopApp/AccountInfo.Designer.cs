@@ -253,7 +253,6 @@
             this.TxtPassword.ReadOnly = true;
             this.TxtPassword.Size = new System.Drawing.Size(285, 27);
             this.TxtPassword.TabIndex = 23;
-            this.TxtPassword.Visible = false;
             // 
             // AccountInfo
             // 
