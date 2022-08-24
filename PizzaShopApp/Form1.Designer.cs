@@ -37,33 +37,34 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TxtCustomerPassword = new System.Windows.Forms.TextBox();
             this.LblPasswordError = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnLogin
             // 
-            this.BtnLogin.Location = new System.Drawing.Point(77, 257);
+            this.BtnLogin.Location = new System.Drawing.Point(77, 289);
             this.BtnLogin.Margin = new System.Windows.Forms.Padding(1);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(140, 28);
+            this.BtnLogin.Size = new System.Drawing.Size(339, 28);
             this.BtnLogin.TabIndex = 0;
-            this.BtnLogin.Text = "Login";
+            this.BtnLogin.Text = "SIGN IN";
             this.BtnLogin.UseVisualStyleBackColor = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // BtnCreateAccount
             // 
-            this.BtnCreateAccount.Location = new System.Drawing.Point(364, 257);
+            this.BtnCreateAccount.Location = new System.Drawing.Point(77, 346);
             this.BtnCreateAccount.Margin = new System.Windows.Forms.Padding(1);
             this.BtnCreateAccount.Name = "BtnCreateAccount";
-            this.BtnCreateAccount.Size = new System.Drawing.Size(140, 28);
+            this.BtnCreateAccount.Size = new System.Drawing.Size(339, 28);
             this.BtnCreateAccount.TabIndex = 1;
-            this.BtnCreateAccount.Text = "Create Account";
+            this.BtnCreateAccount.Text = "CREATE ACCOUNT";
             this.BtnCreateAccount.UseVisualStyleBackColor = true;
             this.BtnCreateAccount.Click += new System.EventHandler(this.BtnCreateAccount_Click);
             // 
             // TxtCustomerEmail
             // 
-            this.TxtCustomerEmail.Location = new System.Drawing.Point(165, 69);
+            this.TxtCustomerEmail.Location = new System.Drawing.Point(77, 160);
             this.TxtCustomerEmail.Margin = new System.Windows.Forms.Padding(1);
             this.TxtCustomerEmail.Name = "TxtCustomerEmail";
             this.TxtCustomerEmail.Size = new System.Drawing.Size(339, 27);
@@ -72,7 +73,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(77, 69);
+            this.label1.Location = new System.Drawing.Point(77, 139);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 20);
@@ -83,7 +84,7 @@
             // 
             this.LbEmailError.AutoSize = true;
             this.LbEmailError.ForeColor = System.Drawing.Color.Red;
-            this.LbEmailError.Location = new System.Drawing.Point(165, 110);
+            this.LbEmailError.Location = new System.Drawing.Point(290, 130);
             this.LbEmailError.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LbEmailError.Name = "LbEmailError";
             this.LbEmailError.Size = new System.Drawing.Size(126, 20);
@@ -94,7 +95,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(77, 151);
+            this.label2.Location = new System.Drawing.Point(77, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 20);
             this.label2.TabIndex = 5;
@@ -102,7 +103,7 @@
             // 
             // TxtCustomerPassword
             // 
-            this.TxtCustomerPassword.Location = new System.Drawing.Point(165, 151);
+            this.TxtCustomerPassword.Location = new System.Drawing.Point(77, 236);
             this.TxtCustomerPassword.Name = "TxtCustomerPassword";
             this.TxtCustomerPassword.PasswordChar = '●';
             this.TxtCustomerPassword.Size = new System.Drawing.Size(339, 27);
@@ -112,18 +113,30 @@
             // 
             this.LblPasswordError.AutoSize = true;
             this.LblPasswordError.ForeColor = System.Drawing.Color.Red;
-            this.LblPasswordError.Location = new System.Drawing.Point(167, 198);
+            this.LblPasswordError.Location = new System.Drawing.Point(266, 213);
             this.LblPasswordError.Name = "LblPasswordError";
             this.LblPasswordError.Size = new System.Drawing.Size(150, 20);
             this.LblPasswordError.TabIndex = 7;
             this.LblPasswordError.Text = "*Password Not Found";
             this.LblPasswordError.Visible = false;
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Baskerville Old Face", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label3.Location = new System.Drawing.Point(52, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(400, 52);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "JK Pizza Co.";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 416);
+            this.ClientSize = new System.Drawing.Size(507, 416);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.LblPasswordError);
             this.Controls.Add(this.TxtCustomerPassword);
             this.Controls.Add(this.label2);
@@ -151,5 +164,6 @@
         private Label label2;
         private TextBox TxtCustomerPassword;
         private Label LblPasswordError;
+        private Label label3;
     }
 }
