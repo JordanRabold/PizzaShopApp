@@ -52,9 +52,8 @@ namespace PizzaShopApp
                 MessageBox.Show($"Thank you {customer.FirstName} for making an account!");
 
                 this.Hide();
-                Form1 login = new Form1();
-                login.ShowDialog();
-                this.Close();
+                HomePage home = new HomePage();
+                home.ShowDialog();
             }
             else
             {
@@ -70,6 +69,13 @@ namespace PizzaShopApp
             {
                 tb.Text = String.Empty;
             }
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 login = new Form1();
+            login.ShowDialog();
         }
     }
 }

@@ -69,5 +69,13 @@ namespace PizzaShopApp
                 homeForm.ShowDialog();
             }
         }
+
+        private void BtnContinue_Click(object sender, EventArgs e)
+        {
+            welcomeUser = "Guest";
+            this.Hide();
+            HomePage home = new HomePage();
+            home.ShowDialog();
+        }
     }
 }

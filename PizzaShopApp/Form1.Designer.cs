@@ -38,6 +38,7 @@
             this.TxtCustomerPassword = new System.Windows.Forms.TextBox();
             this.LblPasswordError = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.BtnContinue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnLogin
@@ -131,11 +132,22 @@
             this.label3.Text = "JK Pizza Co.";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // BtnContinue
+            // 
+            this.BtnContinue.Location = new System.Drawing.Point(77, 400);
+            this.BtnContinue.Name = "BtnContinue";
+            this.BtnContinue.Size = new System.Drawing.Size(339, 30);
+            this.BtnContinue.TabIndex = 9;
+            this.BtnContinue.Text = "CONTINUE AS GUEST";
+            this.BtnContinue.UseVisualStyleBackColor = true;
+            this.BtnContinue.Click += new System.EventHandler(this.BtnContinue_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 416);
+            this.ClientSize = new System.Drawing.Size(507, 461);
+            this.Controls.Add(this.BtnContinue);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.LblPasswordError);
             this.Controls.Add(this.TxtCustomerPassword);
@@ -165,5 +177,6 @@
         private TextBox TxtCustomerPassword;
         private Label LblPasswordError;
         private Label label3;
+        private Button BtnContinue;
     }
 }
