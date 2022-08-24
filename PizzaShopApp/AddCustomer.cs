@@ -43,12 +43,13 @@ namespace PizzaShopApp
                     City = TxtCity.Text.Trim(),
                     ZipCode = TxtZipCode.Text.Trim(),
                     EmailAddress = TxtEmailAddress.Text.Trim(),
+                    Password = TxtPassword.Text.Trim(),
                 };
 
                 dbContext.Customers.Add(customer);
                 dbContext.SaveChanges();
 
-                MessageBox.Show($"Thanks {customer.FirstName}! for making an account");
+                MessageBox.Show($"Thank you {customer.FirstName} for making an account!");
 
                 this.Hide();
                 Form1 login = new Form1();

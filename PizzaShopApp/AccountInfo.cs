@@ -32,9 +32,7 @@ namespace PizzaShopApp
             TxtState.Text = customerAccount.State;
             TxtCity.Text = customerAccount.City;
             TxtZipCode.Text = customerAccount.ZipCode;
-
-            //using PizzaShopContext dbContext = new();
-            //dataGridView1.DataSource = dbContext.Customers.ToList();
+            TxtPassword.Text = customerAccount.Password;
         }
 
         /// <summary>
@@ -67,6 +65,7 @@ namespace PizzaShopApp
             TxtState.ReadOnly = false;
             TxtCity.ReadOnly = false;
             TxtZipCode.ReadOnly = false;
+            TxtPassword.ReadOnly = false;
 
             buttonConfirm.Visible = true;
         }
@@ -83,6 +82,7 @@ namespace PizzaShopApp
             cust.State = TxtState.Text;
             cust.City = TxtCity.Text;
             cust.ZipCode = TxtZipCode.Text;
+            cust.Password = TxtPassword.Text;
 
             dbContext.SaveChanges();
             MessageBox.Show("Account Successfully Updated");
