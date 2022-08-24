@@ -32,5 +32,12 @@ namespace PizzaShopApp
             AccountInfo.customerAccount = account;
             infoForm.ShowDialog();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.ShowDialog();
+        }
     }
 }
