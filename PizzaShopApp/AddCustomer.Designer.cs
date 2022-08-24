@@ -121,7 +121,7 @@
             // TxtFirstName
             // 
             this.TxtFirstName.Location = new System.Drawing.Point(141, 10);
-            this.TxtFirstName.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtFirstName.Margin = new System.Windows.Forms.Padding(1);
             this.TxtFirstName.Name = "TxtFirstName";
             this.TxtFirstName.Size = new System.Drawing.Size(256, 27);
             this.TxtFirstName.TabIndex = 7;
@@ -129,7 +129,7 @@
             // TxtLastName
             // 
             this.TxtLastName.Location = new System.Drawing.Point(141, 54);
-            this.TxtLastName.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtLastName.Margin = new System.Windows.Forms.Padding(1);
             this.TxtLastName.Name = "TxtLastName";
             this.TxtLastName.Size = new System.Drawing.Size(256, 27);
             this.TxtLastName.TabIndex = 8;
@@ -137,7 +137,7 @@
             // TxtEmailAddress
             // 
             this.TxtEmailAddress.Location = new System.Drawing.Point(141, 102);
-            this.TxtEmailAddress.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtEmailAddress.Margin = new System.Windows.Forms.Padding(1);
             this.TxtEmailAddress.Name = "TxtEmailAddress";
             this.TxtEmailAddress.Size = new System.Drawing.Size(256, 27);
             this.TxtEmailAddress.TabIndex = 13;
@@ -145,7 +145,7 @@
             // TxtState
             // 
             this.TxtState.Location = new System.Drawing.Point(141, 279);
-            this.TxtState.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtState.Margin = new System.Windows.Forms.Padding(1);
             this.TxtState.Name = "TxtState";
             this.TxtState.Size = new System.Drawing.Size(256, 27);
             this.TxtState.TabIndex = 10;
@@ -153,7 +153,7 @@
             // TxtCity
             // 
             this.TxtCity.Location = new System.Drawing.Point(141, 234);
-            this.TxtCity.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtCity.Margin = new System.Windows.Forms.Padding(1);
             this.TxtCity.Name = "TxtCity";
             this.TxtCity.Size = new System.Drawing.Size(256, 27);
             this.TxtCity.TabIndex = 11;
@@ -161,7 +161,7 @@
             // TxtZipCode
             // 
             this.TxtZipCode.Location = new System.Drawing.Point(141, 324);
-            this.TxtZipCode.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtZipCode.Margin = new System.Windows.Forms.Padding(1);
             this.TxtZipCode.Name = "TxtZipCode";
             this.TxtZipCode.Size = new System.Drawing.Size(256, 27);
             this.TxtZipCode.TabIndex = 12;
@@ -169,7 +169,7 @@
             // TxtStreetAddress
             // 
             this.TxtStreetAddress.Location = new System.Drawing.Point(141, 190);
-            this.TxtStreetAddress.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TxtStreetAddress.Margin = new System.Windows.Forms.Padding(1);
             this.TxtStreetAddress.Name = "TxtStreetAddress";
             this.TxtStreetAddress.Size = new System.Drawing.Size(256, 27);
             this.TxtStreetAddress.TabIndex = 9;
@@ -177,7 +177,7 @@
             // BtnCreateAccount
             // 
             this.BtnCreateAccount.Location = new System.Drawing.Point(460, 10);
-            this.BtnCreateAccount.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnCreateAccount.Margin = new System.Windows.Forms.Padding(1);
             this.BtnCreateAccount.Name = "BtnCreateAccount";
             this.BtnCreateAccount.Size = new System.Drawing.Size(159, 28);
             this.BtnCreateAccount.TabIndex = 14;
@@ -188,7 +188,7 @@
             // BtnClearInputs
             // 
             this.BtnClearInputs.Location = new System.Drawing.Point(460, 54);
-            this.BtnClearInputs.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.BtnClearInputs.Margin = new System.Windows.Forms.Padding(1);
             this.BtnClearInputs.Name = "BtnClearInputs";
             this.BtnClearInputs.Size = new System.Drawing.Size(159, 28);
             this.BtnClearInputs.TabIndex = 15;
@@ -209,6 +209,7 @@
             // 
             this.TxtPassword.Location = new System.Drawing.Point(141, 147);
             this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.PasswordChar = '●';
             this.TxtPassword.Size = new System.Drawing.Size(256, 27);
             this.TxtPassword.TabIndex = 17;
             // 
@@ -235,7 +236,7 @@
             this.Controls.Add(this.label);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "AddCustomer";
             this.Text = "AddCustomer";
             this.ResumeLayout(false);

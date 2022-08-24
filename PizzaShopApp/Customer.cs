@@ -11,7 +11,6 @@ namespace PizzaShopApp
     public class Customer
     {
         [Key]
-
         public int CustomerID { get; set; }
 
         public string FirstName { get; set; }

@@ -249,6 +249,7 @@
             // 
             this.TxtPassword.Location = new System.Drawing.Point(137, 186);
             this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.PasswordChar = '●';
             this.TxtPassword.ReadOnly = true;
             this.TxtPassword.Size = new System.Drawing.Size(285, 27);
             this.TxtPassword.TabIndex = 23;
