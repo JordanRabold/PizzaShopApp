@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.LblFirstName = new System.Windows.Forms.Label();
+            this.LblLastName = new System.Windows.Forms.Label();
+            this.LblStreetAddress = new System.Windows.Forms.Label();
+            this.LblState = new System.Windows.Forms.Label();
+            this.LblCity = new System.Windows.Forms.Label();
+            this.LblZipCode = new System.Windows.Forms.Label();
+            this.LblEmailAddress = new System.Windows.Forms.Label();
             this.TxtFirstName = new System.Windows.Forms.TextBox();
             this.TxtLastName = new System.Windows.Forms.TextBox();
             this.TxtEmailAddress = new System.Windows.Forms.TextBox();
@@ -44,79 +44,80 @@
             this.TxtStreetAddress = new System.Windows.Forms.TextBox();
             this.BtnCreateAccount = new System.Windows.Forms.Button();
             this.BtnClearInputs = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LblPassword = new System.Windows.Forms.Label();
             this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.BtnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // LblFirstName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "First Name:";
+            this.LblFirstName.AutoSize = true;
+            this.LblFirstName.Location = new System.Drawing.Point(25, 10);
+            this.LblFirstName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblFirstName.Name = "LblFirstName";
+            this.LblFirstName.Size = new System.Drawing.Size(83, 20);
+            this.LblFirstName.TabIndex = 0;
+            this.LblFirstName.Text = "First Name:";
             // 
-            // label2
+            // LblLastName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 54);
-            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Last Name:";
+            this.LblLastName.AutoSize = true;
+            this.LblLastName.Location = new System.Drawing.Point(25, 54);
+            this.LblLastName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblLastName.Name = "LblLastName";
+            this.LblLastName.Size = new System.Drawing.Size(82, 20);
+            this.LblLastName.TabIndex = 1;
+            this.LblLastName.Text = "Last Name:";
             // 
-            // label
+            // LblStreetAddress
             // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(25, 190);
-            this.label.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(108, 20);
-            this.label.TabIndex = 2;
-            this.label.Text = "Street Address:";
+            this.LblStreetAddress.AutoSize = true;
+            this.LblStreetAddress.Location = new System.Drawing.Point(25, 190);
+            this.LblStreetAddress.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblStreetAddress.Name = "LblStreetAddress";
+            this.LblStreetAddress.Size = new System.Drawing.Size(108, 20);
+            this.LblStreetAddress.TabIndex = 2;
+            this.LblStreetAddress.Text = "Street Address:";
             // 
-            // label4
+            // LblState
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 279);
-            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "State:";
+            this.LblState.AutoSize = true;
+            this.LblState.Location = new System.Drawing.Point(25, 279);
+            this.LblState.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblState.Name = "LblState";
+            this.LblState.Size = new System.Drawing.Size(46, 20);
+            this.LblState.TabIndex = 3;
+            this.LblState.Text = "State:";
             // 
-            // label5
+            // LblCity
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(25, 234);
-            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "City:";
+            this.LblCity.AutoSize = true;
+            this.LblCity.Location = new System.Drawing.Point(25, 234);
+            this.LblCity.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblCity.Name = "LblCity";
+            this.LblCity.Size = new System.Drawing.Size(37, 20);
+            this.LblCity.TabIndex = 4;
+            this.LblCity.Text = "City:";
             // 
-            // label6
+            // LblZipCode
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(25, 324);
-            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Zip Code:";
+            this.LblZipCode.AutoSize = true;
+            this.LblZipCode.Location = new System.Drawing.Point(25, 324);
+            this.LblZipCode.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblZipCode.Name = "LblZipCode";
+            this.LblZipCode.Size = new System.Drawing.Size(73, 20);
+            this.LblZipCode.TabIndex = 5;
+            this.LblZipCode.Text = "Zip Code:";
             // 
-            // label7
+            // LblEmailAddress
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 102);
-            this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 20);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Email Address:";
+            this.LblEmailAddress.AutoSize = true;
+            this.LblEmailAddress.Location = new System.Drawing.Point(25, 102);
+            this.LblEmailAddress.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblEmailAddress.Name = "LblEmailAddress";
+            this.LblEmailAddress.Size = new System.Drawing.Size(106, 20);
+            this.LblEmailAddress.TabIndex = 6;
+            this.LblEmailAddress.Text = "Email Address:";
             // 
             // TxtFirstName
             // 
@@ -196,14 +197,14 @@
             this.BtnClearInputs.UseVisualStyleBackColor = true;
             this.BtnClearInputs.Click += new System.EventHandler(this.BtnClearInputs_Click);
             // 
-            // label3
+            // LblPassword
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 147);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 20);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Password:";
+            this.LblPassword.AutoSize = true;
+            this.LblPassword.Location = new System.Drawing.Point(25, 147);
+            this.LblPassword.Name = "LblPassword";
+            this.LblPassword.Size = new System.Drawing.Size(73, 20);
+            this.LblPassword.TabIndex = 16;
+            this.LblPassword.Text = "Password:";
             // 
             // TxtPassword
             // 
@@ -212,13 +213,24 @@
             this.TxtPassword.Size = new System.Drawing.Size(256, 27);
             this.TxtPassword.TabIndex = 17;
             // 
+            // BtnBack
+            // 
+            this.BtnBack.Location = new System.Drawing.Point(460, 324);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(159, 29);
+            this.BtnBack.TabIndex = 18;
+            this.BtnBack.Text = "Back";
+            this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            // 
             // AddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(687, 383);
+            this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.TxtPassword);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LblPassword);
             this.Controls.Add(this.BtnClearInputs);
             this.Controls.Add(this.BtnCreateAccount);
             this.Controls.Add(this.TxtStreetAddress);
@@ -228,16 +240,16 @@
             this.Controls.Add(this.TxtEmailAddress);
             this.Controls.Add(this.TxtLastName);
             this.Controls.Add(this.TxtFirstName);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LblEmailAddress);
+            this.Controls.Add(this.LblZipCode);
+            this.Controls.Add(this.LblCity);
+            this.Controls.Add(this.LblState);
+            this.Controls.Add(this.LblStreetAddress);
+            this.Controls.Add(this.LblLastName);
+            this.Controls.Add(this.LblFirstName);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "AddCustomer";
-            this.Text = "AddCustomer";
+            this.Text = "New Customer";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,13 +257,13 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
+        private Label LblFirstName;
+        private Label LblLastName;
+        private Label LblStreetAddress;
+        private Label LblState;
+        private Label LblCity;
+        private Label LblZipCode;
+        private Label LblEmailAddress;
         private TextBox TxtFirstName;
         private TextBox TxtLastName;
         private TextBox TxtEmailAddress;
@@ -262,7 +274,8 @@
         private Button button1;
         private Button BtnClearInputs;
         private Button BtnCreateAccount;
-        private Label label3;
+        private Label LblPassword;
         private TextBox TxtPassword;
+        private Button BtnBack;
     }
 }

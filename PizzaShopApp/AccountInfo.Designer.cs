@@ -30,27 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LblFirstName = new System.Windows.Forms.Label();
+            this.LblLastName = new System.Windows.Forms.Label();
             this.TxtFirstName = new System.Windows.Forms.TextBox();
             this.TxtLastName = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.LblEmail = new System.Windows.Forms.Label();
+            this.LblState = new System.Windows.Forms.Label();
+            this.LblStreetAddress = new System.Windows.Forms.Label();
+            this.LblCity = new System.Windows.Forms.Label();
+            this.LblZipCode = new System.Windows.Forms.Label();
             this.TxtEmail = new System.Windows.Forms.TextBox();
             this.TxtStreetAddress = new System.Windows.Forms.TextBox();
             this.TxtCity = new System.Windows.Forms.TextBox();
             this.TxtZipCode = new System.Windows.Forms.TextBox();
             this.TxtState = new System.Windows.Forms.TextBox();
             this.buttonDeleteAccount = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.LBLCustID = new System.Windows.Forms.Label();
+            this.LblCustomerID = new System.Windows.Forms.Label();
             this.buttonUpdateAccount = new System.Windows.Forms.Button();
             this.buttonConfirm = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.LblPassword = new System.Windows.Forms.Label();
             this.TxtPassword = new System.Windows.Forms.TextBox();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,23 +59,23 @@
             // 
             this.customerBindingSource.DataSource = typeof(PizzaShopApp.Customer);
             // 
-            // label1
+            // LblFirstName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "First Name:";
+            this.LblFirstName.AutoSize = true;
+            this.LblFirstName.Location = new System.Drawing.Point(18, 49);
+            this.LblFirstName.Name = "LblFirstName";
+            this.LblFirstName.Size = new System.Drawing.Size(83, 20);
+            this.LblFirstName.TabIndex = 3;
+            this.LblFirstName.Text = "First Name:";
             // 
-            // label2
+            // LblLastName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Last Name:";
+            this.LblLastName.AutoSize = true;
+            this.LblLastName.Location = new System.Drawing.Point(18, 94);
+            this.LblLastName.Name = "LblLastName";
+            this.LblLastName.Size = new System.Drawing.Size(82, 20);
+            this.LblLastName.TabIndex = 4;
+            this.LblLastName.Text = "Last Name:";
             // 
             // TxtFirstName
             // 
@@ -92,55 +93,55 @@
             this.TxtLastName.Size = new System.Drawing.Size(285, 27);
             this.TxtLastName.TabIndex = 6;
             // 
-            // label3
+            // LblEmail
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 138);
-            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Email:";
+            this.LblEmail.AutoSize = true;
+            this.LblEmail.Location = new System.Drawing.Point(18, 138);
+            this.LblEmail.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Size = new System.Drawing.Size(49, 20);
+            this.LblEmail.TabIndex = 7;
+            this.LblEmail.Text = "Email:";
             // 
-            // label4
+            // LblState
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 324);
-            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "State:";
+            this.LblState.AutoSize = true;
+            this.LblState.Location = new System.Drawing.Point(18, 324);
+            this.LblState.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblState.Name = "LblState";
+            this.LblState.Size = new System.Drawing.Size(46, 20);
+            this.LblState.TabIndex = 8;
+            this.LblState.Text = "State:";
             // 
-            // label5
+            // LblStreetAddress
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 230);
-            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 20);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Street Address:";
+            this.LblStreetAddress.AutoSize = true;
+            this.LblStreetAddress.Location = new System.Drawing.Point(18, 230);
+            this.LblStreetAddress.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblStreetAddress.Name = "LblStreetAddress";
+            this.LblStreetAddress.Size = new System.Drawing.Size(108, 20);
+            this.LblStreetAddress.TabIndex = 9;
+            this.LblStreetAddress.Text = "Street Address:";
             // 
-            // label6
+            // LblCity
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 277);
-            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "City:";
+            this.LblCity.AutoSize = true;
+            this.LblCity.Location = new System.Drawing.Point(18, 277);
+            this.LblCity.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblCity.Name = "LblCity";
+            this.LblCity.Size = new System.Drawing.Size(37, 20);
+            this.LblCity.TabIndex = 10;
+            this.LblCity.Text = "City:";
             // 
-            // label7
+            // LblZipCode
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 370);
-            this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 20);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Zip Code:";
+            this.LblZipCode.AutoSize = true;
+            this.LblZipCode.Location = new System.Drawing.Point(18, 370);
+            this.LblZipCode.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.LblZipCode.Name = "LblZipCode";
+            this.LblZipCode.Size = new System.Drawing.Size(73, 20);
+            this.LblZipCode.TabIndex = 11;
+            this.LblZipCode.Text = "Zip Code:";
             // 
             // TxtEmail
             // 
@@ -197,23 +198,23 @@
             this.buttonDeleteAccount.UseVisualStyleBackColor = true;
             this.buttonDeleteAccount.Click += new System.EventHandler(this.buttonDeleteAccount_Click);
             // 
-            // label8
+            // LBLCustID
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(137, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 20);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "label8";
+            this.LBLCustID.AutoSize = true;
+            this.LBLCustID.Location = new System.Drawing.Point(137, 9);
+            this.LBLCustID.Name = "LBLCustID";
+            this.LBLCustID.Size = new System.Drawing.Size(165, 20);
+            this.LBLCustID.TabIndex = 18;
+            this.LBLCustID.Text = "CustomerIDPlaceholder";
             // 
-            // label9
+            // LblCustomerID
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(15, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 20);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Customer ID:";
+            this.LblCustomerID.AutoSize = true;
+            this.LblCustomerID.Location = new System.Drawing.Point(15, 9);
+            this.LblCustomerID.Name = "LblCustomerID";
+            this.LblCustomerID.Size = new System.Drawing.Size(94, 20);
+            this.LblCustomerID.TabIndex = 19;
+            this.LblCustomerID.Text = "Customer ID:";
             // 
             // buttonUpdateAccount
             // 
@@ -236,14 +237,14 @@
             this.buttonConfirm.Visible = false;
             this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
-            // label10
+            // LblPassword
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(18, 186);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 20);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "Password:";
+            this.LblPassword.AutoSize = true;
+            this.LblPassword.Location = new System.Drawing.Point(18, 186);
+            this.LblPassword.Name = "LblPassword";
+            this.LblPassword.Size = new System.Drawing.Size(73, 20);
+            this.LblPassword.TabIndex = 22;
+            this.LblPassword.Text = "Password:";
             // 
             // TxtPassword
             // 
@@ -254,34 +255,45 @@
             this.TxtPassword.Size = new System.Drawing.Size(285, 27);
             this.TxtPassword.TabIndex = 23;
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(535, 370);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(151, 29);
+            this.buttonBack.TabIndex = 24;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // AccountInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 421);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.TxtPassword);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.LblPassword);
             this.Controls.Add(this.buttonConfirm);
             this.Controls.Add(this.buttonUpdateAccount);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.LblCustomerID);
+            this.Controls.Add(this.LBLCustID);
             this.Controls.Add(this.buttonDeleteAccount);
             this.Controls.Add(this.TxtState);
             this.Controls.Add(this.TxtZipCode);
             this.Controls.Add(this.TxtCity);
             this.Controls.Add(this.TxtStreetAddress);
             this.Controls.Add(this.TxtEmail);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LblZipCode);
+            this.Controls.Add(this.LblCity);
+            this.Controls.Add(this.LblStreetAddress);
+            this.Controls.Add(this.LblState);
+            this.Controls.Add(this.LblEmail);
             this.Controls.Add(this.TxtLastName);
             this.Controls.Add(this.TxtFirstName);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LblLastName);
+            this.Controls.Add(this.LblFirstName);
             this.Name = "AccountInfo";
-            this.Text = "AccountInfo";
+            this.Text = "Account Info";
             this.Load += new System.EventHandler(this.AccountInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -291,26 +303,27 @@
 
         #endregion
         private BindingSource customerBindingSource;
-        private Label label1;
-        private Label label2;
+        private Label LblFirstName;
+        private Label LblLastName;
         private TextBox TxtFirstName;
         private TextBox TxtLastName;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
+        private Label LblEmail;
+        private Label LblState;
+        private Label LblStreetAddress;
+        private Label LblCity;
+        private Label LblZipCode;
         private TextBox TxtEmail;
         private TextBox TxtStreetAddress;
         private TextBox TxtCity;
         private TextBox TxtZipCode;
         private TextBox TxtState;
         private Button buttonDeleteAccount;
-        private Label label8;
-        private Label label9;
+        private Label LBLCustID;
+        private Label LblCustomerID;
         private Button buttonUpdateAccount;
         private Button buttonConfirm;
-        private Label label10;
+        private Label LblPassword;
         private TextBox TxtPassword;
+        private Button buttonBack;
     }
 }
