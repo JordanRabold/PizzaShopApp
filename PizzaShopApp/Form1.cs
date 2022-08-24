@@ -61,7 +61,7 @@ namespace PizzaShopApp
 
                 welcomeUser = fullName;
                 LbEmailError.Visible = false;
-                MessageBox.Show($"Welcome in {customer.FirstName}!");
+                MessageBox.Show($"Welcome back {customer.FirstName}!");
 
                 this.Hide();
                 HomePage homeForm = new();

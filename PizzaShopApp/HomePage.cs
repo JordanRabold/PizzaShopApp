@@ -22,6 +22,7 @@ namespace PizzaShopApp
         private void HomePage_Load(object sender, EventArgs e)
         {
             labelUserName.Text = "Welcome " + Form1.welcomeUser;
+            labelUserName.Text = "Welcome " + AddCustomer.welcomeNewUser;
         }
 
         private void btnAccountInfo_Click(object sender, EventArgs e)

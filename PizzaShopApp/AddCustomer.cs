@@ -17,9 +17,13 @@ namespace PizzaShopApp
             InitializeComponent();
         }
 
+        public static string welcomeNewUser = "";
+        public static Customer newCustomerInfo = new Customer();
+
         private void BtnCreateAccount_Click(object sender, EventArgs e)
         {
             bool isEmpty = false;
+            string email = TxtEmailAddress.Text;
 
             // Checks each textbox for an entered value
             foreach (TextBox tb in this.Controls.OfType<TextBox>())
@@ -49,10 +53,29 @@ namespace PizzaShopApp
                 dbContext.Customers.Add(customer);
                 dbContext.SaveChanges();
 
+                customer = (from c in dbContext.Customers
+                            where c.EmailAddress == email
+                            select c).FirstOrDefault();
+
+                // Create a customer object to be passed onto the next form
+                newCustomerInfo.CustomerID = customer.CustomerID;
+                newCustomerInfo.FirstName = customer.FirstName;
+                newCustomerInfo.LastName = customer.LastName;
+                newCustomerInfo.StreetAddress = customer.StreetAddress;
+                newCustomerInfo.State = customer.State;
+                newCustomerInfo.City = customer.City;
+                newCustomerInfo.ZipCode = customer.ZipCode;
+                newCustomerInfo.EmailAddress = customer.EmailAddress;
+                newCustomerInfo.Password = customer.Password;
+
+                string fullName = $"{customer.FirstName} {customer.LastName}";
+                welcomeNewUser = fullName;
+
                 MessageBox.Show($"Thank you {customer.FirstName} for making an account!");
 
                 this.Hide();
                 HomePage home = new HomePage();
+                HomePage.account = newCustomerInfo;
                 home.ShowDialog();
             }
             else
