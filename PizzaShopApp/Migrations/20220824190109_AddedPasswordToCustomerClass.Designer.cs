@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PizzaShopApp;
 
@@ -10,9 +11,10 @@ using PizzaShopApp;
 namespace PizzaShopApp.Migrations
 {
     [DbContext(typeof(PizzaShopContext))]
-    partial class PizzaShopContextModelSnapshot : ModelSnapshot
+    [Migration("20220824190109_AddedPasswordToCustomerClass")]
+    partial class AddedPasswordToCustomerClass
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

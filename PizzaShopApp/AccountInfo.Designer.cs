@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TxtFirstName = new System.Windows.Forms.TextBox();
@@ -50,28 +49,19 @@
             this.label9 = new System.Windows.Forms.Label();
             this.buttonUpdateAccount = new System.Windows.Forms.Button();
             this.buttonConfirm = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // customerBindingSource
             // 
             this.customerBindingSource.DataSource = typeof(PizzaShopApp.Customer);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 290);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(743, 255);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 42);
+            this.label1.Location = new System.Drawing.Point(18, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 3;
@@ -80,7 +70,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 88);
+            this.label2.Location = new System.Drawing.Point(18, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 20);
             this.label2.TabIndex = 4;
@@ -88,7 +78,7 @@
             // 
             // TxtFirstName
             // 
-            this.TxtFirstName.Location = new System.Drawing.Point(120, 39);
+            this.TxtFirstName.Location = new System.Drawing.Point(137, 49);
             this.TxtFirstName.Name = "TxtFirstName";
             this.TxtFirstName.ReadOnly = true;
             this.TxtFirstName.Size = new System.Drawing.Size(285, 27);
@@ -96,7 +86,7 @@
             // 
             // TxtLastName
             // 
-            this.TxtLastName.Location = new System.Drawing.Point(120, 85);
+            this.TxtLastName.Location = new System.Drawing.Point(137, 94);
             this.TxtLastName.Name = "TxtLastName";
             this.TxtLastName.ReadOnly = true;
             this.TxtLastName.Size = new System.Drawing.Size(285, 27);
@@ -105,7 +95,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 132);
+            this.label3.Location = new System.Drawing.Point(18, 138);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 20);
@@ -115,7 +105,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(225, 213);
+            this.label4.Location = new System.Drawing.Point(18, 324);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 20);
@@ -125,7 +115,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 176);
+            this.label5.Location = new System.Drawing.Point(18, 230);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 20);
@@ -135,7 +125,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 213);
+            this.label6.Location = new System.Drawing.Point(18, 277);
             this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 20);
@@ -145,7 +135,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(457, 213);
+            this.label7.Location = new System.Drawing.Point(18, 370);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 20);
@@ -154,7 +144,7 @@
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(120, 129);
+            this.TxtEmail.Location = new System.Drawing.Point(137, 138);
             this.TxtEmail.Margin = new System.Windows.Forms.Padding(1);
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.ReadOnly = true;
@@ -163,7 +153,7 @@
             // 
             // TxtStreetAddress
             // 
-            this.TxtStreetAddress.Location = new System.Drawing.Point(120, 174);
+            this.TxtStreetAddress.Location = new System.Drawing.Point(137, 230);
             this.TxtStreetAddress.Margin = new System.Windows.Forms.Padding(1);
             this.TxtStreetAddress.Name = "TxtStreetAddress";
             this.TxtStreetAddress.ReadOnly = true;
@@ -172,34 +162,34 @@
             // 
             // TxtCity
             // 
-            this.TxtCity.Location = new System.Drawing.Point(56, 213);
+            this.TxtCity.Location = new System.Drawing.Point(137, 277);
             this.TxtCity.Margin = new System.Windows.Forms.Padding(1);
             this.TxtCity.Name = "TxtCity";
             this.TxtCity.ReadOnly = true;
-            this.TxtCity.Size = new System.Drawing.Size(151, 27);
+            this.TxtCity.Size = new System.Drawing.Size(285, 27);
             this.TxtCity.TabIndex = 14;
             // 
             // TxtZipCode
             // 
-            this.TxtZipCode.Location = new System.Drawing.Point(535, 213);
+            this.TxtZipCode.Location = new System.Drawing.Point(137, 370);
             this.TxtZipCode.Margin = new System.Windows.Forms.Padding(1);
             this.TxtZipCode.Name = "TxtZipCode";
             this.TxtZipCode.ReadOnly = true;
-            this.TxtZipCode.Size = new System.Drawing.Size(151, 27);
+            this.TxtZipCode.Size = new System.Drawing.Size(285, 27);
             this.TxtZipCode.TabIndex = 15;
             // 
             // TxtState
             // 
-            this.TxtState.Location = new System.Drawing.Point(276, 213);
+            this.TxtState.Location = new System.Drawing.Point(137, 324);
             this.TxtState.Margin = new System.Windows.Forms.Padding(1);
             this.TxtState.Name = "TxtState";
             this.TxtState.ReadOnly = true;
-            this.TxtState.Size = new System.Drawing.Size(151, 27);
+            this.TxtState.Size = new System.Drawing.Size(285, 27);
             this.TxtState.TabIndex = 16;
             // 
             // buttonDeleteAccount
             // 
-            this.buttonDeleteAccount.Location = new System.Drawing.Point(535, 17);
+            this.buttonDeleteAccount.Location = new System.Drawing.Point(535, 49);
             this.buttonDeleteAccount.Name = "buttonDeleteAccount";
             this.buttonDeleteAccount.Size = new System.Drawing.Size(151, 29);
             this.buttonDeleteAccount.TabIndex = 17;
@@ -210,7 +200,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(120, 9);
+            this.label8.Location = new System.Drawing.Point(137, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 20);
             this.label8.TabIndex = 18;
@@ -227,7 +217,7 @@
             // 
             // buttonUpdateAccount
             // 
-            this.buttonUpdateAccount.Location = new System.Drawing.Point(535, 69);
+            this.buttonUpdateAccount.Location = new System.Drawing.Point(535, 94);
             this.buttonUpdateAccount.Name = "buttonUpdateAccount";
             this.buttonUpdateAccount.Size = new System.Drawing.Size(151, 29);
             this.buttonUpdateAccount.TabIndex = 20;
@@ -237,7 +227,7 @@
             // 
             // buttonConfirm
             // 
-            this.buttonConfirm.Location = new System.Drawing.Point(535, 123);
+            this.buttonConfirm.Location = new System.Drawing.Point(535, 138);
             this.buttonConfirm.Name = "buttonConfirm";
             this.buttonConfirm.Size = new System.Drawing.Size(151, 29);
             this.buttonConfirm.TabIndex = 21;
@@ -246,11 +236,31 @@
             this.buttonConfirm.Visible = false;
             this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(18, 186);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 20);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Password:";
+            // 
+            // TxtPassword
+            // 
+            this.TxtPassword.Location = new System.Drawing.Point(137, 186);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.ReadOnly = true;
+            this.TxtPassword.Size = new System.Drawing.Size(285, 27);
+            this.TxtPassword.TabIndex = 23;
+            this.TxtPassword.Visible = false;
+            // 
             // AccountInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 272);
+            this.ClientSize = new System.Drawing.Size(760, 421);
+            this.Controls.Add(this.TxtPassword);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.buttonConfirm);
             this.Controls.Add(this.buttonUpdateAccount);
             this.Controls.Add(this.label9);
@@ -270,12 +280,10 @@
             this.Controls.Add(this.TxtFirstName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "AccountInfo";
             this.Text = "AccountInfo";
             this.Load += new System.EventHandler(this.AccountInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,7 +291,6 @@
 
         #endregion
         private BindingSource customerBindingSource;
-        private DataGridView dataGridView1;
         private Label label1;
         private Label label2;
         private TextBox TxtFirstName;
@@ -303,5 +310,7 @@
         private Label label9;
         private Button buttonUpdateAccount;
         private Button buttonConfirm;
+        private Label label10;
+        private TextBox TxtPassword;
     }
 }

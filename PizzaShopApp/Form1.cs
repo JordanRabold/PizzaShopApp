@@ -25,13 +25,16 @@ namespace PizzaShopApp
             using PizzaShopContext dbContext = new();
 
             string email = TxtCustomerEmail.Text;
+            string password = TxtCustomerPassword.Text;
 
             bool doesExist = (from c in dbContext.Customers
                               where c.EmailAddress == email
+                              where c.Password == password
                               select c).Any();
 
             if (!doesExist)
             {
+                LblPasswordError.Visible = true;
                 LbEmailError.Visible = true;
             }
             // If email is found
@@ -51,13 +54,14 @@ namespace PizzaShopApp
                 customerInfo.City = customer.City;
                 customerInfo.ZipCode = customer.ZipCode;
                 customerInfo.EmailAddress = customer.EmailAddress;
+                customerInfo.Password = customer.Password;
 
                 // String together the account holder's name to be displayed on next form
                 string fullName = $"{customer.FirstName} {customer.LastName}";
 
                 welcomeUser = fullName;
                 LbEmailError.Visible = false;
-                MessageBox.Show("Email was found");
+                MessageBox.Show($"Welcome in {customer.FirstName}!");
 
                 this.Hide();
                 HomePage homeForm = new();
