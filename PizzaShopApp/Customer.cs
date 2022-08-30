@@ -45,18 +45,21 @@ namespace PizzaShopApp
         /// Customers Zipcode to deliver to
         /// Must be 5 numbers long
         /// </summary>
+        [StringLength(5, MinimumLength = 5)]
         public string ZipCode  { get; set; }
 
         /// <summary>
         /// Customers valid Email Address
         /// Must be 50 characters or less
         /// </summary>
+        [MaxLength(50)]
         public string EmailAddress { get; set; }
 
         /// <summary>
         /// Customers valid Password
         /// Must be 8-50 characters long
         /// </summary>
+        [StringLength(50, MinimumLength = 8)]
         public string Password { get; set; }
 
     }
