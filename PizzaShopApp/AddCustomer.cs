@@ -43,6 +43,11 @@ namespace PizzaShopApp
                 missingValues += $"\nZipCode must be 5 characters";
 
             }
+            if (!int.TryParse(TxtZipCode.Text.Trim(), out int result))
+            {
+                isValid = false;
+                missingValues += $"\nZipCode must be only numbers";
+            }
 
             // Checks if inputted Email is less than 50 characters
             int emailLengthCheck = TxtEmailAddress.Text.Trim().Length;
