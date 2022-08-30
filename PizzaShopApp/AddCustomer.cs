@@ -22,19 +22,56 @@ namespace PizzaShopApp
 
         private void BtnCreateAccount_Click(object sender, EventArgs e)
         {
-            bool isEmpty = false;
+            bool isValid = true;
             string email = TxtEmailAddress.Text;
+            string missingValues = "Some inputs may be missing, please check all textboxes for input";
 
             // Checks each textbox for an entered value
             foreach (TextBox tb in this.Controls.OfType<TextBox>())
             {
                 if (tb.Text.Trim() == "")
                 {
-                    isEmpty = true;
+                    isValid = false;
                 }
             }
 
-            if (!isEmpty)
+            // Checks if inputted ZipCode is at least 5 characters
+            int zipCodeCheck = TxtZipCode.Text.Trim().Length;
+            if (zipCodeCheck != 5)
+            {
+                isValid = false;
+                missingValues += $"\nZipCode must be 5 characters";
+
+            }
+            if (!int.TryParse(TxtZipCode.Text.Trim(), out int result))
+            {
+                isValid = false;
+                missingValues += $"\nZipCode must be only numbers";
+            }
+
+            // Checks if inputted Email is less than 50 characters
+            int emailLengthCheck = TxtEmailAddress.Text.Trim().Length;
+            if (emailLengthCheck > 50)
+            {
+                isValid = false;
+                missingValues += $"\nEmail cannot be longer than 50 characters";
+            }
+
+            // Checks if inputted password is at least 8 characters
+            // and is less than 50 characters
+            int passwordLengthCheck = TxtPassword.Text.Trim().Length;
+            if (passwordLengthCheck < 8)
+            {
+                isValid = false;
+                missingValues += $"\nPassword must be at least 8 characters";
+            }
+            if (passwordLengthCheck > 50)
+            {
+                isValid = false;
+                missingValues += $"\nPassword cannot be longer than 50 characters";
+            }
+
+            if (isValid)
             {
                 using PizzaShopContext dbContext = new();
 
@@ -80,7 +117,7 @@ namespace PizzaShopApp
             }
             else
             {
-                MessageBox.Show($"Please enter missing values");
+                MessageBox.Show(missingValues);
             }
 
         }
